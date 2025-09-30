@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dazzle Dots — Glitter Tattoos</title>
+  <meta name="description" content="Dazzle Dots — unique & bespoke glitter tattoos for parties, weddings, festivals and more.">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Great+Vibes&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --pink:#F8C8DC;
+      --lavender:#CBA6E0;
+      --soft:#FAF9FB;
+      --muted:#6B5D7B;
+      --accent-grad: linear-gradient(90deg, #F8C8DC 0%, #CBA6E0 100%);
+      --card-shadow: 0 6px 18px rgba(107,93,123,0.08);
+    }
+    *{box-sizing:border-box}
+    body{font-family:Poppins,system-ui,Arial; margin:0; color:var(--muted); background:linear-gradient(180deg,var(--soft),#fff);}
+    a{color:inherit}
+    header{background:var(--soft); border-bottom:1px solid rgba(0,0,0,0.03); position:sticky; top:0; z-index:50}
+    .container{max-width:1100px; margin:0 auto; padding:24px}
+
+    /* Hero */
+    .hero{display:flex; gap:24px; align-items:center; padding:40px 0}
+    .logo{display:flex; align-items:center; gap:12px}
+    .logo .badge{width:84px; height:84px; border-radius:50%; background:var(--accent-grad); display:flex; align-items:center; justify-content:center; box-shadow:0 8px 24px rgba(203,166,224,0.18);}
+    .logo .badge span{font-family:'Great Vibes'; font-size:28px; color:white}
+    .hero h1{margin:0; font-size:32px; color:#513a5a}
+    .hero p{margin:8px 0 0; color:#6f5673}
+    .cta{margin-top:14px}
+    .btn{display:inline-block; padding:10px 18px; border-radius:12px; font-weight:600; text-decoration:none}
+    .btn-primary{background:var(--accent-grad); color:white; box-shadow:var(--card-shadow)}
+    .btn-outline{border:2px solid rgba(107,93,123,0.08); background:white}
+
+    /* Grid */
+    .grid{display:grid; grid-template-columns:1fr 360px; gap:28px}
+    .card{background:white; padding:18px; border-radius:14px; box-shadow:var(--card-shadow)}
+
+    /* About */
+    .services{display:flex; gap:12px; flex-wrap:wrap}
+    .service{background:linear-gradient(180deg,rgba(203,166,224,0.08),rgba(248,200,220,0.04)); padding:10px 12px; border-radius:10px; font-weight:600}
+
+    /* Gallery */
+   <!-- Gallery -->
+<div class="gallery-grid">
+  <img src="tatt&braidposter.PNG" alt="Hair Braids Glitter Tattoo">
+  <img src="braid styles.png" alt="Braid Styles">
+  <img src="glitter tattoo.png" alt="Glitter Tattoo">
+  <img src="curly braid.png" alt="Curly Braid">
+  <img src="hair art.png" alt="Hair Art">
+</div>
+
+<!-- Lightbox -->
+<div id="lightbox" class="lightbox">
+  <span class="close">&times;</span>
+  <img class="lightbox-img" src="">
+</div>
+
+<style>
+/* Gallery Grid */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+.gallery-grid img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
+
+/* Lightbox Styles */
+.lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  overflow: hidden;
+}
+
+.lightbox-img {
+  max-width: 90%;
+  max-height: 80%;
+  border-ra
+
+
+    /* Reviews */
+    .review{border-left:4px solid var(--lavender); padding-left:12px; margin-bottom:10px}
+    .stars{color:#F4C2D9}
+
+    /* Forms */
+    input, textarea, select{width:100%; padding:10px; border-radius:8px; border:1px solid rgba(107,93,123,0.08); margin-top:8px}
+    label{font-weight:600; font-size:14px}
+    .form-row{display:flex; gap:10px}
+    .form-row .col{flex:1}
+
+    /* Footer */
+    footer{padding:28px 0; text-align:center; color:#8b7390}
+
+    /* Responsive */
+    @media (max-width:900px){
+      .grid{grid-template-columns:1fr;}
+      .gallery-grid{grid-template-columns:repeat(2,1fr)}
+      .hero{flex-direction:column; align-items:flex-start}
+    }
+    @media (max-width:480px){
+      .gallery-grid{grid-template-columns:1fr}
+    }
+
+    /* small helper */
+    .muted{color:#8b7390}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container" style="display:flex; justify-content:space-between; align-items:center">
+      <div style="display:flex; align-items:center; gap:12px">
+        <div class="logo">
+          <div class="badge"><span>DD</span></div>
+          <div>
+            <div style="font-weight:700; color:#513a5a">Dazzle Dots</div>
+            <div style="font-size:12px; color:#8b7390">Unique glitter tattoos — bespoke stencil designs</div>
+          </div>
+        </div>
+      </div>
+      <nav class="muted" style="font-weight:600">
+        <a href="#about">About</a> &nbsp;•&nbsp;
+        <a href="#gallery">Gallery</a> &nbsp;•&nbsp;
+        <a href="#events">Events</a> &nbsp;•&nbsp;
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div style="flex:1">
+        <h1>Dazzle Dots — glitter tattoos with a personal touch</h1>
+        <p>I create unique, bespoke glitter tattoo stencil designs for adults and children. Perfect for parties, weddings, fetes, festivals and craft fairs.</p>
+        <div class="cta">
+          <a class="btn btn-primary" href="#booking">Book Now</a>
+          <a class="btn btn-outline" href="#gallery" style="margin-left:10px">View Gallery</a>
+        </div>
+
+        <div style="margin-top:18px; display:flex; gap:10px; flex-wrap:wrap">
+          <div class="service">Parties & Birthdays</div>
+          <div class="service">Weddings</div>
+          <div class="service">Festivals & Fun Days</div>
+          <div class="service">Fundraisers & Charities</div>
+          <div class="service">Craft Fairs (stall + kits)</div>
+        </div>
+      </div>
+      <div style="width:360px">
+        <div class="card">
+          <strong>Next available dates</strong>
+          <p class="muted" id="next-available">Loading availability...</p>
+          <a class="btn btn-primary" href="#booking">Request Booking</a>
+        </div>
+
+        <div class="card" style="margin-top:16px">
+          <strong>Quick Reviews</strong>
+          <div id="reviews-brief">
+            <!-- JS will populate -->
+          </div>
+          <a href="#reviews" style="display:block; margin-top:8px; text-decoration:none;">Read more reviews →</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" style="margin-top:22px">
+      <div class="grid">
+        <div>
+          <div class="card">
+            <h3 style="margin-top:0">About Dazzle Dots</h3>
+            <p>I’m passionate about giving every guest a special, personalised experience. I design bespoke stencils and apply skin-safe cosmetic glitters suitable for both children and adults. I bring a calm, friendly presence to events and pride myself on small touches that make each booking unique.</p>
+            <h4>What I bring</h4>
+            <ul>
+              <li>Custom stencil designs on request</li>
+              <li>Hypoallergenic cosmetic glitters</li>
+              <li>Experienced with mixed-age groups</li>
+              <li>Public liability insurance (if required)</li>
+            </ul>
+          </div>
+
+          <div class="card" style="margin-top:12px">
+            <h4>Gallery preview</h4>
+            <div id="gallery" class="gallery-grid">
+              <!-- Images populated by JS (replace src with real images) -->
+              <img src="https://via.placeholder.com/400x300?text=Event+1" alt="Event 1" onclick="openLightbox(0)">
+              <img src="https://via.placeholder.com/400x300?text=Event+2" alt="Event 2" onclick="openLightbox(1)">
+              <img src="https://via.placeholder.com/400x300?text=Event+3" alt="Event 3" onclick="openLightbox(2)">
+              <img src="https://via.placeholder.com/400x300?text=Event+4" alt="Event 4" onclick="openLightbox(3)">
+              <img src="https://via.placeholder.com/400x300?text=Event+5" alt="Event 5" onclick="openLightbox(4)">
+              <img src="https://via.placeholder.com/400x300?text=Event+6" alt="Event 6" onclick="openLightbox(5)">
+            </div>
+          </div>
+        </div>
+
+        <aside>
+          <div class="card">
+            <h4>Services & Pricing </h4>
+            <p><strong>Standard party</strong> — £45 per hour up to 4 hours.</p>
+<p><strong>Daily rate for events over 4 hours  -Tailored quote (includes artist for 4+ hours</strong></p>
+            <p><strong>Wedding package</strong> — tailored quote (includes artist for 2–4 hours).</p>
+            <p class="muted">Prices shown are subject to change dependant on need — additional cost of £10 if over 5 miles from Portadown.</p>
+          </div>
+ 
+
+
+          <div class="card" style="margin-top:12px">
+            <h4>Availability calendar</h4>
+            <p class="muted">Below is a placeholder calendar. To connect a live booking calendar:
+            <ul>
+              <li>Option A: embed a Google Calendar (public) iframe</li>
+              <li>Option B: integrate Calendly (free plan) for booking slots</li>
+              <li>Option C: use a simple contact form and manage manually</li>
+            </ul>
+            </p>
+            <div style="background:#fff8; padding:10px; border-radius:8px; text-align:center;">[Calendar embed / Calendly goes here]</div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="reviews" style="margin-top:22px">
+      <div class="card">
+        <h3>Reviews from past events</h3>
+        <div id="reviews-list">
+          <!-- JS will populate -->
+        </div>
+      </div>
+    </section>
+
+    <section id="booking" style="margin-top:22px">
+      <div class="grid">
+        <div>
+          <div class="card">
+            <h3>Booking request</h3>
+            <form id="booking-form" onsubmit="submitBooking(event)">
+              <label for="bname">Name</label>
+              <input id="bname" name="name" required>
+
+              <label for="bemail">Email</label>
+              <input id="bemail" name="email" type="email" required>
+
+              <div class="form-row">
+                <div class="col">
+                  <label for="bphone">Phone</label>
+                  <input id="bphone" name="phone">
+                </div>
+                <div class="col">
+                  <label for="event-type">Event type</label>
+                  <select id="event-type" name="event">
+                    <option>Birthday / Party</option>
+                    <option>Wedding</option>
+                    <option>Festival / Fete</option>
+                    <option>Fundraiser / Charity</option>
+                    <option>Business Opening</option>
+                    <option>Craft Fair Stall</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+              </div>
+
+              <label for="edate">Event date</label>
+              <input id="edate" name="date" type="date" required>
+
+              <label for="eguests">Approx. number of guests</label>
+              <input id="eguests" name="guests" type="number" min="1">
+
+              <label for="message">Message / requirements</label>
+              <textarea id="message" name="message" rows="4"></textarea>
+
+              <label style="display:block; margin-top:10px"><input type="checkbox" id="consent" required> I have read and accept the <a href="#consent-page">terms & consent</a>.</label>
+
+              <div style="margin-top:12px; display:flex; gap:8px">
+                <button class="btn btn-primary" type="submit">Send Booking Request</button>
+                <button class="btn btn-outline" type="button" onclick="resetBooking()">Reset</button>
+              </div>
+            </form>
+            <p id="booking-status" style="margin-top:10px"></p>
+            <p class="muted" style="font-size:13px">This form is a demo — connect to Formspree, Netlify Forms, or your email backend to receive submissions.</p>
+          </div>
+
+          <div class="card" style="margin-top:12px">
+            <h4>Contact</h4>
+            <p>If you prefer a quick message, email: <a href="mailto:dazzledotsinfo@gmail.com">dazzledotsinfo@gmail.com</a></p>
+            <p>Phone / WhatsApp: <strong>+44 7552232089</strong></p>
+          </div>
+        </div>
+
+        <aside>
+          <div class="card">
+            <h4>Consent & Terms</h4>
+            <p class="muted">Please read the full consent & terms below. A short summary: all glitters used are cosmetic grade and hypoallergenic; parental consent is required for under-16s; you are responsible for supervising children during application.</p>
+            <a class="btn btn-outline" href="#consent-page" style="display:inline-block; margin-top:8px">Read full terms</a>
+          </div>
+
+          <div class="card" style="margin-top:12px">
+            <h4>Craft fair goods</h4>
+            <p>Handmade craft kits and small toys available — perfect for party favours. Hair braids and face gems available for birthdays. If you'd like to stock or pre-order, mention it on the booking form.</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="consent-page" style="margin-top:22px">
+      <div class="card">
+        <h3>Consent & Terms and Conditions</h3>
+        <p><strong>Health & safety:</strong> All products used are cosmetic-grade, hypoallergenic and applied following manufacturer guidance. If a guest has known allergies or sensitivities please notify us before application.</p>
+        <p><strong>Parental consent:</strong> For children under 16, a parent or guardian must provide consent on site, NO tattoos will be applied to face for any child under the age of 16.</p>
+        <p><strong>Cancellation:</strong> A small deposit may be requested for large bookings. Cancellation policies will be agreed per booking.</p>
+        <p><strong>Liability:</strong> Dazzle Dots holds public liability insurance where required for event spaces. We are not responsible for pre-existing skin conditions.</p>
+        <p class="muted"></p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <div style="display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap">
+        <div>© <strong>Dazzle Dots</strong> — bespoke glitter tattoos</div>
+        <div class="muted"></div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox + JS -->
+  <div id="lightbox" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.6); align-items:center; justify-content:center; z-index:60">
+    <img id="lb-img" src="" style="max-width:90%; max-height:80%; border-radius:10px; box-shadow:0 10px 40px rgba(0,0,0,0.6)">
+  </div>
+
+  <script>
+    const reviews = [
+      {name:'Sarah', text:'Fantastic with the kids — so patient and the tattoos lasted days!', stars:5},
+      {name:'JonathanM-602', text:'Great service 5 stars. Hired them for a 21st birthday party, they came early and set up for us. Made brilliant custom designs to fit the theme of the party which was barbie themed. Super friendly and welcoming to all the people there, even did some free hand designs for people who wanted other things. Over all the level and quality of service was 5 stars.', stars:5},
+      {name:'Aisha', text:'Great stall at the craft fair — lovely kits and very friendly.', stars:4},
+      {name:'ColleenC-43', text:'Got some beautiful wax cat shaped melts for wedding favours they are so cute and smell devine', stars:5}
+    ];
+
+    function populateReviews(){
+      const brief = document.getElementById('reviews-brief');
+      brief.innerHTML = reviews.slice(0,2).map(r=>`<div style="margin-top:8px"><strong>${r.name}</strong><div class=\"stars\">${'★'.repeat(r.stars)}</div><div class=\"muted\">${r.text}</div></div>`).join('');
+
+      const list = document.getElementById('reviews-list');
+      list.innerHTML = reviews.map(r=>`<div class=\"review\"><strong>${r.name}</strong> <span class=\"stars\">${'★'.repeat(r.stars)}</span><p>${r.text}</p></div>`).join('');
+    }
+
+    // Demo: next available (fake logic)
+    function nextAvailable(){
+      const p = document.getElementById('next-available');
+      const d = new Date();
+      d.setDate(d.getDate()+7); // sample next slot in 7 days
+      p.textContent = d.toDateString();
+    }
+
+    function openLightbox(i){
+      const imgs = Array.from(document.querySelectorAll('.gallery-grid img'));
+      const src = imgs[i].src;
+      const lb = document.getElementById('lightbox');
+      document.getElementById('lb-img').src = src.replace('400x300','1000x800');
+      lb.style.display='flex';
+      lb.onclick = ()=> lb.style.display='none';
+    }
+
+    // Booking form (demo only)
+    function submitBooking(e){
+      e.preventDefault();
+      const status = document.getElementById('booking-status');
+      status.textContent = 'Sending...';
+      // Demo: simulate sending
+      setTimeout(()=>{
+        status.textContent = 'Thanks — your booking request has been received. I will reply to you within 48 hours.';
+        e.target.reset();
+      },800);
+    }
+    function resetBooking(){ document.getElementById('booking-form').reset(); document.getElementById('booking-status').textContent=''; }
+
+    // Init
+    document.addEventListener('DOMContentLoaded',()=>{ populateReviews(); nextAvailable(); });
+  </script>
+</body>
+</html>
+
+
